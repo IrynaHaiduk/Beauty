@@ -1,0 +1,23 @@
+.user-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  //position: absolute;
+  width: 100%;
+  z-index: 3;
+  background-color: $dark-brown1;
+
+}
+
+.user-list__login {
+  position: relative;
+
+  display: block;
+  padding: 17px 21px;
+  padding-left: 49px;
+
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}

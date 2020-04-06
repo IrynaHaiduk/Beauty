@@ -1,0 +1,6 @@
+.page-header__wrapper {
+  @include wrapper;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}

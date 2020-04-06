@@ -1,0 +1,20 @@
+.basket {
+ position: absolute;
+ top: 35px;
+}
+
+.basket svg {
+  fill: $light-brown2;
+
+}
+
+.basket__count {
+  position: absolute;
+  color: $dark-brown1;
+  left: 10px;
+  top: 12px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.3em;
+  font-family: museo-slab-w01-100, serif;
+}
