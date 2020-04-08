@@ -5,7 +5,7 @@
 .main-nav__toggle {
   position: absolute;
   top: 33px;
-  right: 18px;
+  right: 5%;
   z-index: 2;
   display: block;
   width: 50px;
@@ -32,7 +32,6 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-
   &::before,
   &::after {
     content: "";
@@ -71,7 +70,7 @@
     display: block;
   }
 
-  .main-nav--opened .user-list__item {
+  .main-nav--opened .site-list__item {
     display: block;
   }
 

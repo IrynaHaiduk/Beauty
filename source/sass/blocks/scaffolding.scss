@@ -4,7 +4,7 @@
   font-weight: 400;
   src: local("Sacramento"),
     local("Sacramento-Regular"),
-    url("https://fonts.gstatic.com/s/sacramento/v7/buezpo6gcdjy0eiZMbuG4c0f_Q.woff2") format("woff2");
+    url("../fonts/buezpo6gcdjy0eiZMbuG4c0f_Q.woff2") format("woff2");
   unicode-range:
     u+0000-00ff,
     u+0131,
@@ -31,7 +31,8 @@
   font-weight: 400;
   src: local("basic Regular"),
     local("basic-Regular"),
-    url("https://fonts.gstatic.com/s/basic/v9/xfu_0WLxV2_XKTNw6fe.woff2") format("woff2");
+    url("..fonts/xfu_0WLxV2_XKTNw6fe.woff2"),
+    format("woff2");
   unicode-range:
     u+0000-00ff,
     u+0131,
@@ -54,55 +55,28 @@
 
 @font-face {
   font-family: "Museo-Slab-W01-100";
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/01ab709f-22cf-4831-b24a-8cf4eb852687.eot?#iefix");
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/01ab709f-22cf-4831-b24a-8cf4eb852687.eot?#iefix")
-    format("eot"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/cacc0862-f146-4746-92b1-60e6114a66c4.woff")
-    format("woff"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/54006f54-b61e-4103-abf8-b1d0294a2a9c.ttf")
-    format("truetype"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e5841f2e-b306-4583-bfc3-a0e06742fedd.svg#e5841f2e-b306-4583-bfc3-a0e06742fedd")
-    format("svg");
+  src: url("..fonts/cacc0862-f146-4746-92b1-60e6114a66c4.woff"),
+    format("woff");
 }
 
 @font-face {
   font-family: "ReklameScriptW00-Medium";
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/5af7511a-dccc-450d-b2a2-bb8e3bb62540.eot?#iefix");
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/5af7511a-dccc-450d-b2a2-bb8e3bb62540.eot?#iefix")
-    format("eot"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/05b176f5-c622-4c35-af98-c0c056dd5b66.woff")
-    format("woff"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/9dcb5a3c-1c64-4c9c-a402-995bed762eb7.ttf")
-    format("truetype"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/1e87d66a-d7f1-4869-8430-51662777be57.svg#1e87d66a-d7f1-4869-8430-51662777be57")
-    format("svg");
+  src: url("..fonts/05b176f5-c622-4c35-af98-c0c056dd5b66.woff"),
+    format("woff");
 }
 
 @font-face {
   font-family: "Museo-W01-700";
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/3b3d99a2-6b36-4912-a93e-29277020a5cf.eot?#iefix");
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/3b3d99a2-6b36-4912-a93e-29277020a5cf.eot?#iefix")
-    format("eot"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/28d74e9b-4ea9-4e3c-b265-c67a72c66856.woff")
-    format("woff"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/b432b4e1-014a-4ed8-865c-249744f856b0.ttf")
-    format("truetype"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/8e63fd1e-adc9-460e-9ef7-bbf98ee32a71.svg#8e63fd1e-adc9-460e-9ef7-bbf98ee32a71")
-    format("svg");
+  src:
+    url("..fonts/28d74e9b-4ea9-4e3c-b265-c67a72c66856.woff"),
+    format("woff");
 }
 
 @font-face {
   font-family: "wixfreemiumfontW01-65Medi";
   font-weight: bold;
-  src: url("//static.parastorage.com/services/third-party/fonts/Helvetica/fonts/07fe0fec-b63f-4963-8ee1-535528b67fdb.eot?#iefix");
-  src: url("//static.parastorage.com/services/third-party/fonts/Helvetica/fonts/07fe0fec-b63f-4963-8ee1-535528b67fdb.eot?#iefix")
-    format("eot"),
-    url("//static.parastorage.com/services/third-party/fonts/Helvetica/fonts/60be5c39-863e-40cb-9434-6ebafb62ab2b.woff")
-    format("woff"),
-    url("//static.parastorage.com/services/third-party/fonts/Helvetica/fonts/4c6503c9-859b-4d3b-a1d5-2d42e1222415.ttf")
-    format("truetype"),
-    url("//static.parastorage.com/services/third-party/fonts/Helvetica/fonts/36c182c6-ef98-4021-9b0d-d63122c2bbf5.svg#36c182c6-ef98-4021-9b0d-d63122c2bbf5")
-    format("svg");
+  src:  url("..fonts/60be5c39-863e-40cb-9434-6ebafb62ab2b.woff")
+    format("woff");
 }
 
 html {

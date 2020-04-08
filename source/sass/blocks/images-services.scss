@@ -5,6 +5,13 @@
   position: relative;
 }
 
+.images-services__big img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  text-align: center;
+}
+
 .images-services__slogan {
   position: absolute;
   width: 131px;
@@ -12,37 +19,31 @@
   border-radius: 50%;
   background-color: $green;
   z-index: 1;
-  right: 2px;
-  top: 201px;
+  left: 60%;
+  top: 78%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 36px 0;
   align-items: center;
+
   & span:first-of-type {
     letter-spacing: 0.1em;
     font-size: 14px;
     line-height: normal;
     font-style: normal;
     font-weight: normal;
-    font-family: museo-slab-w01-100, serif;
+    font-family: "museo-slab-w01-100", serif;
     color: $light-brown2;
   }
 
   & span:nth-of-type(2) {
     font-size: 22px;
-    font-family: reklamescriptw00-medium,cursive;
+    font-family: "reklamescriptw00-medium", cursive;
     line-height: normal;
     letter-spacing: normal;
     color: $light-brown2;
   }
-}
-
-.images-services__big img {
-  width: 271px;
-  height: 260px;
-  object-fit: cover;
-  text-align: center;
 }
 
 .images-services__list {
@@ -55,16 +56,17 @@
 
 .images-services__item {
   margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
 }
 
 .images-services__item img {
-  display: block;
-  width: 150px;
-  height: 150px;
+  width: 55%;
+  height: auto;
   object-fit: cover;
 }
 
 .images-services__item:nth-of-type(2) img {
-  width: 130px;
-  height: 130px;
+  width: 50%;
+  height: auto;
 }

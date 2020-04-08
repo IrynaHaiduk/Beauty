@@ -16,7 +16,7 @@
   font-style: normal;
   font-weight: normal;
   line-height: 1.3em;
-  font-family: museo-slab-w01-100, serif;
+  font-family: "museo-slab-w01-100", serif;
   padding-bottom: 20px;
   padding-top: 15px;
   padding-left: 95px;
@@ -45,12 +45,11 @@
   font-style: normal;
   font-weight: normal;
   line-height: 1.3em;
-  color: $light-brown2;
-  font-family: museo-slab-w01-100, serif;
+  font-family: "museo-slab-w01-100", serif;
   border: 1px solid $grey;
+
   &:hover,
   &:focus {
     border: 1px solid $light-brown2;
   }
 }
-
