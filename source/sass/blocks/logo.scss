@@ -7,4 +7,17 @@
   color: $light-brown2;
   text-decoration: none;
   letter-spacing: normal;
+  padding-bottom: 40px;
+  padding-top: 60px;
+  border-bottom: 1px solid $light-brown2;
+  margin-bottom: 15px;
+}
+
+.logo[href]:hover,
+.logo[href]:focus {
+color: $dark-brown1;
+}
+
+.logo[href]:active {
+  opacity: 0.7;
 }

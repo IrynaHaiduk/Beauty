@@ -3,21 +3,54 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  //position: absolute;
-  width: 100%;
   z-index: 3;
-  background-color: $dark-brown1;
-
 }
 
 .user-list__login {
   position: relative;
-
   display: block;
-  padding: 17px 21px;
-  padding-left: 49px;
-
-  line-height: 18px;
-  color: #ffffff;
+  color: $light-brown2;
   text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.3em;
+  font-family: museo-slab-w01-100, serif;
+  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-left: 95px;
+  padding-right: 40px;
 }
+
+.user-list__login-icon {
+  position: absolute;
+  top: 13px;
+  left: 61px;
+  width: 26px;
+  height: 26px;
+  fill: $light-brown2;
+}
+
+.user-list__select {
+  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-left: 65px;
+  margin-right: 40px;
+  width: 82px;
+  height: 24px;
+  font-size: 16px;
+  background-color: $light-brown1;
+  color: $light-brown2;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.3em;
+  color: $light-brown2;
+  font-family: museo-slab-w01-100, serif;
+  border: 1px solid $grey;
+  &:hover,
+  &:focus {
+    border: 1px solid $light-brown2;
+  }
+}
+

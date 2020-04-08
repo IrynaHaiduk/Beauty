@@ -3,25 +3,17 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  //position: absolute;
-  width: 100%;
-  z-index: 3;
-  background-color: $dark-brown1;
-
 }
 
 .site-list__item {
   display: block;
- // padding-top: 22px;
   padding-bottom: 20px;
-  //padding-right: 40px;
- // padding-left: 20px;
- padding-top: 15px;
- padding-left: 65px;
- padding-right: 40px;
+  padding-top: 15px;
+  padding-left: 65px;
+  padding-right: 40px;
 }
 
- .site-list__link {
+.site-list__link {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -29,10 +21,15 @@
   text-decoration: none;
   color: $light-brown2;
   font-family: museo-slab-w01-100, serif;
-    }
-
+  &:hover,
+  &:focus {
+    color: $light-brown1;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+}
 
 .site-list__item--active .site-list__link {
   color: $dark-green;
 }
-

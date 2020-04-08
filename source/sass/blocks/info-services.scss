@@ -1,0 +1,49 @@
+.info-services {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #fdf6f0;
+}
+
+.info-services__title {
+  font-size: 18px;
+  text-align: center;
+  line-height: normal;
+  font-style: normal;
+  font-family: museo-slab-w01-100, serif;
+  color: $light-brown2;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.info-services__content {
+  font-size: 14px;
+  line-height: normal;
+  font-family: museo-w01-700, serif;
+  color: $light-brown2;
+  text-align: justify;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.info-services__link {
+  display: block;
+  width: 249px;
+  background-color: $green;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  text-align: center;
+  cursor: pointer;
+  font-size: 16.8px;
+  font-weight: normal;
+  line-height: 1.3em;
+  font-family: museo-slab-w01-100, serif;
+  color: $light-brown2;
+  padding: 20px 0;
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
