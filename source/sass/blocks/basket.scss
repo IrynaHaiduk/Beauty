@@ -5,6 +5,8 @@
 
 .basket svg {
   fill: $light-brown2;
+  width: 30px;
+  height: 35px;
 }
 
 .basket__count {
@@ -16,4 +18,24 @@
   font-size: 16px;
   line-height: 1.3em;
   font-family: "museo-slab-w01-100", serif;
+}
+
+@media (min-width: $tablet-width) {
+  .basket {
+    position: absolute;
+    top: 179px;
+    right: 1.8%;
+  }
+
+  .basket svg {
+    width: 25px;
+    height: 30px;
+  }
+
+  .basket__count {
+    left: 9px;
+    top: 11px;
+    font-size: 13px;
+    color: $dark-brown1;
+  }
 }

@@ -1,3 +1,9 @@
 .services {
   @include wrapper;
 }
+
+@media (min-width: $tablet-width) {
+  .services {
+    @include wrapper-tablet;
+  }
+}

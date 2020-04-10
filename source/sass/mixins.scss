@@ -8,3 +8,8 @@
   background-color: $brown;
   padding: 0 5%;
 }
+
+@mixin wrapper-tablet {
+  width: 78%;
+  padding: 0 1.5%;
+}

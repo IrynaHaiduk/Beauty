@@ -5,3 +5,10 @@
   flex-direction: column;
   margin-bottom: 15px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    @include wrapper-tablet;
+    margin-bottom: 0;
+  }
+}

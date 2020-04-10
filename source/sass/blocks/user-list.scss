@@ -53,3 +53,40 @@
     border: 1px solid $light-brown2;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    flex-direction: row;
+    width: 20%;
+    justify-content: flex-end;
+  }
+
+  .user-list__login {
+    padding: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .user-list__login-icon {
+    left: 9px;
+    top: -2px;
+  }
+
+  .user-list__select {
+    position: absolute;
+    margin: 0;
+    top: 15px;
+    right: 6%;
+    width: 77px;
+    height: 28px;
+
+    &:hover,
+    &:focus {
+      background-color: $dark-brown1;
+    }
+
+    &:active {
+      background-color: $brown;
+    }
+  }
+}

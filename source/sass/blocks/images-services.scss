@@ -3,6 +3,7 @@
   justify-content: center;
   margin-bottom: 80px;
   position: relative;
+  width: 100%;
 }
 
 .images-services__big img {
@@ -23,8 +24,7 @@
   top: 78%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 36px 0;
+  justify-content: space-evenly;
   align-items: center;
 
   & span:first-of-type {
@@ -52,12 +52,12 @@
   justify-content: center;
   list-style: none;
   align-items: center;
+  width: 100%;
 }
 
 .images-services__item {
   margin-bottom: 10px;
   text-align: center;
-  width: 100%;
 }
 
 .images-services__item img {
@@ -69,4 +69,59 @@
 .images-services__item:nth-of-type(2) img {
   width: 50%;
   height: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .images-services__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .images-services__big {
+    width: 66%;
+    margin-bottom: 0;
+  }
+
+  .images-services__list {
+    width: 33%;
+  }
+
+  .images-services__item {
+    margin-bottom: 0;
+  }
+
+  .images-services__item img {
+    width: 70%;
+  }
+
+  .images-services__item:first-of-type img {
+    margin-left: 50px;
+  }
+
+  .images-services__item:nth-of-type(2) img {
+    width: 65%;
+    margin-right: 67px;
+  }
+
+  .images-services__item:nth-of-type(3) img {
+    margin-left: 64px;
+    margin-top: -59px;
+  }
+
+  .images-services__slogan {
+    width: 30%;
+    height: 30%;
+    left: 89%;
+    top: 7%;
+    padding: 0;
+
+    & span:first-of-type {
+      letter-spacing: 0.1em;
+      font-size: 17px;
+    }
+  }
 }

@@ -22,6 +22,10 @@
   text-align: justify;
   margin-bottom: 15px;
   font-weight: normal;
+
+  &:last-of-type {
+    margin-bottom: 40px;
+  }
 }
 
 .info-services__link {
@@ -47,5 +51,27 @@
   &:hover,
   &:focus {
     opacity: 0.5;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .info-services {
+    padding: 0 60px;
+    padding-bottom: 50px;
+    text-align: left;
+  }
+
+  .info-services__title {
+    font-size: 24px;
+  }
+
+  .info-services__content {
+    font-size: 20px;
+  }
+
+  .info-services__link {
+    width: 302px;
+    font-size: 18px;
   }
 }

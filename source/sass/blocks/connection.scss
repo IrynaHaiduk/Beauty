@@ -54,3 +54,41 @@
     opacity: 0.5;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .connection {
+    @include wrapper-tablet;
+  }
+
+  .connection__list {
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    padding-top: 20px;
+  }
+
+  .connection__item {
+    width: 33.3%;
+    justify-content: flex-start;
+
+    & span {
+      font-size: 16px;
+    }
+  }
+
+  .connection__link img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .connection__title {
+    font-size: 24px;
+    vertical-align: baseline;
+    letter-spacing: 0.1em;
+  }
+
+  .connection__info {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+  }
+}

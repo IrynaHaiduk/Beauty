@@ -35,3 +35,40 @@
 .site-list__item--active .site-list__link {
   color: $dark-green;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+    order: -1;
+    justify-content: flex-start;
+    width: 80%;
+  }
+
+  .site-list__item {
+    display: block;
+    padding: 0;
+    width: 20%;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  .site-list__link {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+    color: $light-brown2;
+
+    &:hover,
+    &:focus {
+      color: $dark-brown1;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  .site-list__item--active .site-list__link {
+    color: $dark-brown2;
+  }
+}
