@@ -6,16 +6,19 @@
   z-index: 3;
 }
 
+.user-list__item {
+  font-size: 16px;
+  line-height: 1.3em;
+  font-weight: normal;
+}
+
 .user-list__login {
   position: relative;
   display: block;
   color: $light-brown2;
   text-decoration: none;
-  font-size: 15px;
   cursor: pointer;
   font-style: normal;
-  font-weight: normal;
-  line-height: 1.3em;
   font-family: "museo-slab-w01-100", serif;
   padding-bottom: 20px;
   padding-top: 15px;
@@ -47,6 +50,7 @@
   line-height: 1.3em;
   font-family: "museo-slab-w01-100", serif;
   border: 1px solid $grey;
+  transition: 0.4s ease;
 
   &:hover,
   &:focus {
@@ -57,27 +61,33 @@
 @media (min-width: $tablet-width) {
   .user-list {
     flex-direction: row;
-    width: 20%;
-    justify-content: flex-end;
+    width: 15%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .user-list__item {
+    width: 100%;
+    line-height: 30px;
+    font-weight: bold;
   }
 
   .user-list__login {
     padding: 0;
     padding-left: 40px;
-    padding-right: 40px;
   }
 
   .user-list__login-icon {
     left: 9px;
-    top: -2px;
+    top: 1px;
   }
 
   .user-list__select {
     position: absolute;
     margin: 0;
     top: 15px;
-    right: 6%;
-    width: 77px;
+    right: 75px;
+    width: 87px;
     height: 28px;
 
     &:hover,

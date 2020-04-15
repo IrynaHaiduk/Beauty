@@ -1,0 +1,26 @@
+.info-story__title {
+  @include title;
+  margin-top: 0;
+}
+
+.info-story__content {
+  @include content;
+
+  & span {
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .info-story {
+    width: 505px;
+  }
+
+  .info-story__title {
+    font-size: 24px;
+  }
+
+  .info-story__content {
+    font-size: 20px;
+  }
+}

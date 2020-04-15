@@ -1,0 +1,36 @@
+.story {
+  @include wrapper;
+}
+
+.story__image {
+  width: 100%;
+
+  & img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .story {
+    @include wrapper-tablet;
+  }
+
+  .story__container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .story__image {
+    width: 382px;
+
+    & img {
+      width: 382px;
+      height: 680px;
+      margin-top: 57px;
+    }
+  }
+}

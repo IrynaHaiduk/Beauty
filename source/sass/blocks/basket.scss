@@ -22,9 +22,8 @@
 
 @media (min-width: $tablet-width) {
   .basket {
-    position: absolute;
-    top: 179px;
-    right: 1.8%;
+    top: 211px;
+    right: 25px;
   }
 
   .basket svg {
@@ -36,6 +35,5 @@
     left: 9px;
     top: 11px;
     font-size: 13px;
-    color: $dark-brown1;
   }
 }

@@ -1,0 +1,80 @@
+.form__wrapper {
+  border: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  padding: 0;
+}
+
+.form__input {
+  appearance: none;
+  outline: none;
+  transition: 0.4s ease;
+  // flex-grow: 1;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 15px;
+  color: $white;
+  padding: 10px;
+  background: none;
+  border: 1px solid $light-brown1;
+  font-style: normal;
+
+  font-size: 18px;
+  line-height: 1.3em;
+  font-family: "museo-slab-w01-100", serif;
+
+  &::placeholder {
+    color: $light-brown1;
+  }
+
+  &--textarea {
+    height: 150px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $dark-brown1;
+  }
+
+  &:active {
+    background-color: rgba($dark-brown1, 0.7);
+  }
+
+  &:not(:placeholder-shown):invalid {
+    border: 1px solid red;
+  }
+}
+
+.form__submit {
+  transition: 0.4s ease;
+  cursor: pointer;
+  margin-left: auto;
+  font-size: 14px;
+  line-height: 1.1em;
+  font-family: "museo-slab-w01-100", serif;
+  color: $dark-brown1;
+  padding: 10px;
+  width: 35%;
+  font-weight: bold;
+  background-color: $light-brown3;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-brown1;
+    color: $light-brown3;
+  }
+
+  &:active {
+    color: $dark-brown1;
+    background-color: $light-brown1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: 546px;
+  }
+}

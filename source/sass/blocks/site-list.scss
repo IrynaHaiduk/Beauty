@@ -14,6 +14,7 @@
 }
 
 .site-list__link {
+  transition: 0.4s ease;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -42,21 +43,22 @@
     order: -1;
     justify-content: flex-start;
     width: 80%;
+    flex-wrap: wrap;
   }
 
   .site-list__item {
     display: block;
     padding: 0;
     width: 20%;
-    flex-wrap: wrap;
     text-align: left;
+    padding-right: 10px;
   }
 
   .site-list__link {
     font-weight: bold;
-    font-size: 14px;
     line-height: 30px;
     color: $light-brown2;
+
 
     &:hover,
     &:focus {

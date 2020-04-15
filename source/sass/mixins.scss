@@ -1,15 +1,39 @@
-@mixin list {
-  list-style: none;
-}
-
 @mixin wrapper {
   width: 90%;
   margin: 0 auto;
   background-color: $brown;
   padding: 0 5%;
+  padding-top: 20px;
 }
 
 @mixin wrapper-tablet {
-  width: 78%;
-  padding: 0 1.5%;
+  width: 980px;
+  padding: 0 25px;
+}
+
+@mixin title {
+  font-size: 18px;
+  text-align: center;
+  line-height: normal;
+  font-style: normal;
+  font-family: "museo-slab-w01-100", serif;
+  color: $light-brown2;
+  margin-bottom: 20px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+@mixin content {
+  font-size: 16px;
+  line-height: normal;
+  font-family: "museo-slab-w01-100", serif;
+  color: $light-brown2;
+  text-align: justify;
+  margin-bottom: 15px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  font-weight: normal;
+  letter-spacing: normal;
 }

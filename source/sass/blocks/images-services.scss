@@ -15,8 +15,8 @@
 
 .images-services__slogan {
   position: absolute;
-  width: 131px;
-  height: 128px;
+  width: 128px;
+  height: 133px;
   border-radius: 50%;
   background-color: $green;
   z-index: 1;
@@ -24,7 +24,7 @@
   top: 78%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
   & span:first-of-type {
@@ -35,9 +35,10 @@
     font-weight: normal;
     font-family: "museo-slab-w01-100", serif;
     color: $light-brown2;
+    padding-bottom: 20px;
   }
 
-  & span:nth-of-type(2) {
+  & span:last-of-type {
     font-size: 22px;
     font-family: "reklamescriptw00-medium", cursive;
     line-height: normal;
@@ -75,53 +76,63 @@
   .images-services__container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
     margin-bottom: 60px;
   }
 
   .images-services__big {
-    width: 66%;
+    width: 66.5%;
     margin-bottom: 0;
+
+    & img {
+      width: 581px;
+      height: 536px;
+    }
   }
 
   .images-services__list {
-    width: 33%;
+    width: 33.5%;
   }
 
   .images-services__item {
     margin-bottom: 0;
   }
 
-  .images-services__item img {
-    width: 70%;
-  }
-
   .images-services__item:first-of-type img {
+    width: 218px;
+    height: 218px;
     margin-left: 50px;
   }
 
   .images-services__item:nth-of-type(2) img {
-    width: 65%;
-    margin-right: 67px;
+    width: 184px;
+    height: 184px;
+    margin-right: 128px;
   }
 
   .images-services__item:nth-of-type(3) img {
-    margin-left: 64px;
-    margin-top: -59px;
+    width: 210px;
+    height: 210px;
+    margin-left: 103px;
+    margin-top: -84px;
   }
 
   .images-services__slogan {
-    width: 30%;
-    height: 30%;
-    left: 89%;
-    top: 7%;
+    width: 195px;
+    height: 184px;
+    left: 532px;
+    top: 35px;
     padding: 0;
 
     & span:first-of-type {
       letter-spacing: 0.1em;
-      font-size: 17px;
+      font-size: 18px;
+    }
+
+    & span:last-of-type {
+      font-size: 33px;
     }
   }
 }

@@ -4,7 +4,7 @@
   font-weight: 400;
   src: local("Sacramento"),
     local("Sacramento-Regular"),
-    url("/fonts/buezpo6gcdjy0eiZMbuG4c0f_Q.woff2") format("woff2");
+    url("../fonts/buezpo6gcdjy0eiZMbuG4c0f_Q.woff2") format("woff2");
   unicode-range:
     u+0000-00ff,
     u+0131,
@@ -31,8 +31,7 @@
   font-weight: 400;
   src: local("basic Regular"),
     local("basic-Regular"),
-    url("/fonts/xfu_0WLxV2_XKTNw6fe.woff2"),
-    format("woff2");
+    url("../fonts/xfu_0WLxV2_XKTNw6fe.woff2") format("woff2");
   unicode-range:
     u+0000-00ff,
     u+0131,
@@ -55,41 +54,24 @@
 
 @font-face {
   font-family: "Museo-Slab-W01-100";
-  src: url("/fonts/cacc0862-f146-4746-92b1-60e6114a66c4.woff"),
-    format("woff");
+  src: url("../fonts/cacc0862-f146-4746-92b1-60e6114a66c4.woff") format("woff");
 }
 
 @font-face {
   font-family: "ReklameScriptW00-Medium";
-  src: url("/fonts/05b176f5-c622-4c35-af98-c0c056dd5b66.woff"),
-    format("woff");
+  src: url("../fonts/05b176f5-c622-4c35-af98-c0c056dd5b66.woff") format("woff");
 }
 
-
-@font-face {
-  font-family: "ReklameScriptW00-Medium";
-  src: url("/fonts/5af7511a-dccc-450d-b2a2-bb8e3bb62540.eot?#iefix"),
-    format("eot"),
-    url("/fonts/05b176f5-c622-4c35-af98-c0c056dd5b66.woff"),
-    format("woff"),
-    url("/fonts/9dcb5a3c-1c64-4c9c-a402-995bed762eb7.ttf"),
-    format("truetype"),
-    url("/fonts/1e87d66a-d7f1-4869-8430-51662777be57.svg#1e87d66a-d7f1-4869-8430-51662777be57"),
-    format("svg");
-}
 
 @font-face {
   font-family: "Museo-W01-700";
-  src:
-    url("/fonts/28d74e9b-4ea9-4e3c-b265-c67a72c66856.woff"),
-    format("woff");
+  src: url("../fonts/28d74e9b-4ea9-4e3c-b265-c67a72c66856.woff") format("woff");
 }
 
 @font-face {
   font-family: "wixfreemiumfontW01-65Medi";
   font-weight: bold;
-  src:  url("/fonts/60be5c39-863e-40cb-9434-6ebafb62ab2b.woff")
-    format("woff");
+  src: url("../fonts/60be5c39-863e-40cb-9434-6ebafb62ab2b.woff") format("woff");
 }
 
 html {

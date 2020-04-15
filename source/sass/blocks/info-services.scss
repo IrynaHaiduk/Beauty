@@ -1,27 +1,9 @@
-.info-services {
-  padding-bottom: 40px;
-  border-bottom: 1px solid #fdf6f0;
-}
-
 .info-services__title {
-  font-size: 18px;
-  text-align: center;
-  line-height: normal;
-  font-style: normal;
-  font-family: "museo-slab-w01-100", serif;
-  color: $light-brown2;
-  margin-bottom: 20px;
-  font-weight: normal;
+  @include title;
 }
 
 .info-services__content {
-  font-size: 14px;
-  line-height: normal;
-  font-family: "museo-w01-700", serif;
-  color: $light-brown2;
-  text-align: justify;
-  margin-bottom: 15px;
-  font-weight: normal;
+  @include content;
 
   &:last-of-type {
     margin-bottom: 40px;
@@ -29,6 +11,7 @@
 }
 
 .info-services__link {
+  transition: 0.4s ease;
   display: block;
   width: 249px;
   background-color: $green;
@@ -46,11 +29,11 @@
   line-height: 1.3em;
   font-family: "museo-slab-w01-100", serif;
   color: $light-brown2;
-  padding: 20px 0;
+  padding: 20px 10px;
 
   &:hover,
   &:focus {
-    opacity: 0.5;
+    background-color: $light-green;
   }
 }
 
@@ -58,8 +41,6 @@
 @media (min-width: $tablet-width) {
   .info-services {
     padding: 0 60px;
-    padding-bottom: 50px;
-    text-align: left;
   }
 
   .info-services__title {
@@ -73,5 +54,6 @@
   .info-services__link {
     width: 302px;
     font-size: 18px;
+    padding: 25px 15px;
   }
 }

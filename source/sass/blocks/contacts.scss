@@ -1,0 +1,98 @@
+.contacts {
+  @include wrapper;
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.contacts__info {
+  padding-bottom: 50px;
+}
+
+.contacts__title {
+  @include title;
+}
+
+.contacts__content {
+  @include content;
+  text-align: center;
+}
+
+.contacts__list {
+  list-style: none;
+  padding-top: 50px;
+}
+
+.contacts__item {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+
+.contacts__image {
+  margin-right: 15px;
+}
+
+.contacts__text {
+  transition: 0.4s ease;
+  font-size: 24px;
+  line-height: 1.1em;
+  font-family: "museo-slab-w01-100", serif;
+  color: $light-brown2;
+
+  &:hover,
+  &:focus {
+    color: $dark-brown1;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.contacts__form {
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    @include wrapper-tablet;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .contacts__info {
+    width: 305px;
+    margin-right: auto;
+  }
+
+  .contacts__title {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .contacts__content {
+    font-size: 20px;
+    text-align: left;
+  }
+}

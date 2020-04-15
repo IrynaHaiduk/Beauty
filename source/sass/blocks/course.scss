@@ -1,0 +1,82 @@
+.course {
+  cursor: pointer;
+}
+
+.course__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid $light-brown2;
+}
+
+.course__image {
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: "Скоро";
+    position: absolute;
+    background-color: $dark-green;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    line-height: 1.3em;
+    font-family: "museo-slab-w01-100", serif;
+    text-align: center;
+    text-rendering: optimizeSpeed;
+    color: $white;
+    padding: 5px 10px;
+    width: 28%;
+  }
+}
+
+.course__image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.course__view {
+  position: absolute;
+  bottom: 4px;
+  color: $black;
+  background-color: rgba($white, 0.75);
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.3em;
+  font-family: "museo-slab-w01-100", serif;
+  padding: 20px;
+  display: none;
+}
+
+.course__link:hover .course__view {
+  display: block;
+}
+
+.course__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: $light-brown2;
+  font-style: normal;
+  line-height: 17px;
+  font-family: "museo-slab-w01-100", serif;
+  font-size: 14px;
+  padding: 15px;
+  min-height: 98px;
+}
+
+.course__title {
+  font-size: 14px;
+  text-align: center;
+
+  & span {
+    text-transform: uppercase;
+  }
+}
+
+.course__price {
+  opacity: 0.6;
+}

@@ -1,5 +1,10 @@
 .connection {
   @include wrapper;
+  padding-top: 50px;
+}
+
+.connection__wrapper {
+  border-top: 1px solid $light-brown2;
   padding-top: 30px;
 }
 
@@ -44,6 +49,7 @@
 .connection__link img {
   width: 35px;
   height: 35px;
+  transition: 0.4s ease;
 
   &:hover,
   &:focus {
@@ -58,13 +64,14 @@
 @media (min-width: $tablet-width) {
   .connection {
     @include wrapper-tablet;
+    padding-top: 50px;
   }
 
   .connection__list {
     flex-direction: row;
     width: 100%;
     justify-content: flex-start;
-    padding-top: 20px;
+    align-items: flex-start;
   }
 
   .connection__item {
