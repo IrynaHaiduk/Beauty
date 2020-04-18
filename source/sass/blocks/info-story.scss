@@ -1,3 +1,8 @@
+
+.info-story {
+  margin-bottom: 20px;
+}
+
 .info-story__title {
   @include title;
   margin-top: 0;
@@ -14,6 +19,7 @@
 @media (min-width: $tablet-width) {
   .info-story {
     width: 505px;
+    margin-bottom: 0;
   }
 
   .info-story__title {

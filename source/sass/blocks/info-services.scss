@@ -11,29 +11,11 @@
 }
 
 .info-services__link {
-  transition: 0.4s ease;
-  display: block;
-  width: 249px;
-  background-color: $green;
-  text-decoration: none;
-  margin: 0 auto;
+  @include green-btn;
   margin-bottom: 40px;
 
   &:last-of-type {
     margin-bottom: 0;
-  }
-  text-align: center;
-  cursor: pointer;
-  font-size: 16.8px;
-  font-weight: normal;
-  line-height: 1.3em;
-  font-family: "museo-slab-w01-100", serif;
-  color: $light-brown2;
-  padding: 20px 10px;
-
-  &:hover,
-  &:focus {
-    background-color: $light-green;
   }
 }
 
@@ -57,3 +39,4 @@
     padding: 25px 15px;
   }
 }
+

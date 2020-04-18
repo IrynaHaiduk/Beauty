@@ -51,10 +51,12 @@
   font-family: "museo-slab-w01-100", serif;
   border: 1px solid $grey;
   transition: 0.4s ease;
+  outline: none;
 
   &:hover,
   &:focus {
     border: 1px solid $light-brown2;
+    outline: none;
   }
 }
 
@@ -97,6 +99,7 @@
 
     &:active {
       background-color: $brown;
+      outline: none;
     }
   }
 }

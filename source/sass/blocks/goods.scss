@@ -1,0 +1,16 @@
+.goods {
+  @include wrapper;
+}
+
+
+@media (min-width: $tablet-width) {
+  .goods {
+    @include wrapper-tablet;
+  }
+
+  .goods__wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}

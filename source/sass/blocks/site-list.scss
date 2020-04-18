@@ -14,23 +14,7 @@
 }
 
 .site-list__link {
-  transition: 0.4s ease;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.3em;
-  text-decoration: none;
-  color: $light-brown2;
-  font-family: "museo-slab-w01-100", serif;
-
-  &:hover,
-  &:focus {
-    color: $light-brown1;
-  }
-
-  &:active {
-    opacity: 0.7;
-  }
+  @include nav-link;
 }
 
 .site-list__item--active .site-list__link {
@@ -52,22 +36,6 @@
     width: 20%;
     text-align: left;
     padding-right: 10px;
-  }
-
-  .site-list__link {
-    font-weight: bold;
-    line-height: 30px;
-    color: $light-brown2;
-
-
-    &:hover,
-    &:focus {
-      color: $dark-brown1;
-    }
-
-    &:active {
-      opacity: 0.7;
-    }
   }
 
   .site-list__item--active .site-list__link {
