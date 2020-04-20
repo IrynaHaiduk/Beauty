@@ -29,16 +29,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .products {
-    @include wrapper-tablet;
-  }
-
   .products__title {
     font-size: 24px;
-  }
-
-  .products__content {
-    font-size: 20px;
   }
 
   .products__list {

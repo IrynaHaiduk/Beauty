@@ -19,18 +19,9 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .info-services {
     padding: 0 60px;
-  }
-
-  .info-services__title {
-    font-size: 24px;
-  }
-
-  .info-services__content {
-    font-size: 20px;
   }
 
   .info-services__link {
@@ -39,4 +30,3 @@
     padding: 25px 15px;
   }
 }
-

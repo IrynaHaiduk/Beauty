@@ -10,36 +10,35 @@
   font-size: 16px;
   line-height: 1.3em;
   font-weight: normal;
+  margin-bottom: 20px;
 }
 
-.user-list__login {
+.user-list__link {
   position: relative;
-  display: block;
-  color: $light-brown2;
-  text-decoration: none;
-  cursor: pointer;
-  font-style: normal;
-  font-family: "museo-slab-w01-100", serif;
-  padding-bottom: 20px;
-  padding-top: 15px;
-  padding-left: 95px;
-  padding-right: 40px;
+  @include nav-link;
+  padding-left: 40px;
 }
 
-.user-list__login-icon {
+.user-list__icon {
   position: absolute;
-  top: 13px;
-  left: 61px;
+  top: -5px;
+    left: 0;
   width: 26px;
   height: 26px;
+  transition: 0.4s ease;
   fill: $light-brown2;
 }
 
+.user-list__link:hover  .user-list__icon,
+.user-list__link:focus  .user-list__icon {
+  fill: $light-brown1;
+}
+
+.user-list__link:active  .user-list__icon{
+  opacity: 0.7;
+}
+
 .user-list__select {
-  margin-bottom: 20px;
-  margin-top: 15px;
-  margin-left: 65px;
-  margin-right: 40px;
   width: 82px;
   height: 24px;
   font-size: 16px;
@@ -49,16 +48,24 @@
   font-weight: normal;
   line-height: 1.3em;
   font-family: "museo-slab-w01-100", serif;
-  border: 1px solid $grey;
+  border: 1px solid $light-brown2;
   transition: 0.4s ease;
   outline: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {
-    border: 1px solid $light-brown2;
+    background-color: $brown;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $dark-brown1;
     outline: none;
   }
 }
+
+
 
 @media (min-width: $tablet-width) {
   .user-list {
@@ -72,16 +79,18 @@
     width: 100%;
     line-height: 30px;
     font-weight: bold;
+    margin-bottom: 0;
+    padding-right: 40px;
   }
 
-  .user-list__login {
+  .user-list__link {
     padding: 0;
     padding-left: 40px;
   }
 
-  .user-list__login-icon {
-    left: 9px;
-    top: 1px;
+  .user-list__icon {
+    top: -5px;
+    left: 8px;
   }
 
   .user-list__select {
@@ -102,4 +111,13 @@
       outline: none;
     }
   }
+
+  .user-list__link:hover  .user-list__icon,
+.user-list__link:focus  .user-list__icon {
+  fill: $dark-brown1;
+}
+
+.user-list__link:active  .user-list__icon{
+  opacity: 0.7;
+}
 }

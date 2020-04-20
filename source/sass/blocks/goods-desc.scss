@@ -8,14 +8,12 @@
 }
 
 .goods-desc__list {
-@include content;
+  @include content;
   text-align: left;
   list-style: none;
-
 }
 
 .goods-desc__item {
-
   padding-left: 55px;
   position: relative;
   &:last-of-type {
@@ -27,14 +25,11 @@
     content: "";
     width: 5px;
     height: 5px;
-    border: 1px solid  $light-brown2;
+    border: 1px solid $light-brown2;
     border-radius: 50%;
     top: 10px;
     left: 25px;
-
-
   }
-
 }
 
 .goods-desc__content--remark {
@@ -43,13 +38,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .goods-desc  {
+  .goods-desc {
     width: 45%;
-  }
-
-  .goods-desc__content,
-  .goods-desc__list {
-   font-size: 20px;
-
   }
 }

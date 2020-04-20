@@ -1,12 +1,8 @@
 .basket {
   position: absolute;
   top: 48px;
-}
-
-.basket svg {
-  fill: $light-brown2;
-  width: 30px;
-  height: 35px;
+  outline: none;
+  transition: 0.4s ease;
 }
 
 .basket__count {
@@ -14,16 +10,42 @@
   color: $dark-brown1;
   left: 10px;
   top: 12px;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 16px;
   line-height: 1.3em;
   font-family: "museo-slab-w01-100", serif;
+}
+
+.basket:hover .basket__count,
+.basket:focus .basket__count {
+  color: $light-brown1;
+}
+
+.basket:active .basket__count {
+  color: $light-brown2;
+}
+
+.basket__icon {
+  width: 30px;
+  height: 35px;
+  transition: 0.4s ease;
+  fill: $light-brown2;
+}
+
+.basket:hover .basket__icon,
+.basket:focus .basket__icon {
+  fill: $dark-brown1;
+}
+
+.basket:active .basket__icon {
+  fill: rgba($dark-brown1, 0.7);
 }
 
 @media (min-width: $tablet-width) {
   .basket {
     top: 211px;
     right: 25px;
+    z-index: 4;
   }
 
   .basket svg {

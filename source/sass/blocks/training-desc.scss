@@ -1,0 +1,44 @@
+.training-desc__content {
+  @include content;
+  text-align: left;
+
+  & span {
+    text-transform: uppercase;
+  }
+}
+
+.training-desc__list {
+  @include content;
+  text-align: left;
+  list-style: none;
+}
+
+.training-desc__item {
+  padding-left: 55px;
+  position: relative;
+  &:last-of-type {
+    margin-bottom: 20px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border: 1px solid $light-brown2;
+    border-radius: 50%;
+    top: 10px;
+    left: 25px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .training-desc {
+    width: 45%;
+  }
+
+  .training-desc__content,
+  .training-desc__list {
+    font-size: 20px;
+  }
+}

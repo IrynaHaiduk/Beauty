@@ -12,10 +12,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .story {
-    @include wrapper-tablet;
-  }
-
   .story__container {
     display: flex;
     flex-direction: row;

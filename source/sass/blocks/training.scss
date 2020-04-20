@@ -1,0 +1,11 @@
+.training {
+  @include wrapper;
+}
+
+@media (min-width: $tablet-width) {
+  .training__wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}

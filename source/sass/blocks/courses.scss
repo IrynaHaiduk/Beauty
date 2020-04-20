@@ -17,6 +17,7 @@
 
 .courses__item {
   margin-bottom: 25px;
+  width: 100%;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -24,10 +25,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .courses {
-    @include wrapper-tablet;
-  }
-
   .courses__title {
     font-size: 24px;
   }
