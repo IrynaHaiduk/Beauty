@@ -17,7 +17,6 @@
   transition: 0.4s ease;
 }
 
-
 .main-nav--closed .main-nav__toggle:hover,
 .main-nav--closed .main-nav__toggle:focus {
   background-color: $dark-brown1;
@@ -70,27 +69,25 @@
   }
 }
 
-.main-nav--opened  .main-nav__toggle:hover,
-.main-nav--opened  .main-nav__toggle:focus {
+.main-nav--opened .main-nav__toggle:hover,
+.main-nav--opened .main-nav__toggle:focus {
   background-color: $dark-brown1;
 }
 
-.main-nav--opened  .main-nav__toggle:active {
+.main-nav--opened .main-nav__toggle:active {
   background-color: rgba($dark-brown1, 0.7);
 }
 
 .main-nav--opened .main-nav__toggle:hover::before,
 .main-nav--opened .main-nav__toggle:focus::before,
 .main-nav--opened .main-nav__toggle:hover::after,
-.main-nav--opened .main-nav__toggle:focus::after  {
+.main-nav--opened .main-nav__toggle:focus::after {
   background-color: $light-brown1;
-
 }
 
 .main-nav--opened .main-nav__toggle:active::before,
 .main-nav--opened .main-nav__toggle:active::after {
   background-color: $light-brown2;
-
 }
 
 @media (max-width: $mobile-width-only) {

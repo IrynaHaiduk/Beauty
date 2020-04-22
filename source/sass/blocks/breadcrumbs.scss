@@ -17,11 +17,14 @@
 .breadcrumbs__link {
   @include nav-link;
 
-  & svg {
-    vertical-align: middle;
+  &--active {
+    display: flex;
+    align-items: center;
   }
 
-
+  & svg {
+    margin-right: 5px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -48,7 +51,7 @@
       width: 8px;
       height: 8px;
 
-      background-color: $light-brown2;;
+      background-color: $light-brown2;
       transform: rotate(45deg);
     }
 
@@ -66,10 +69,9 @@
       display: none;
     }
 
-
-  & span {
-    text-transform: uppercase;
-  }
+    & span {
+      text-transform: uppercase;
+    }
   }
 
   .breadcrumbs__item--current .breadcrumbs__link {

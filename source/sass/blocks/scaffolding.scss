@@ -5,8 +5,7 @@
   src: local("Sacramento"),
     local("Sacramento-Regular"),
     url("../fonts/buezpo6gcdjy0eiZMbuG4c0f_Q.woff2") format("woff2");
-  unicode-range:
-    u+0000-00ff,
+  unicode-range: u+0000-00ff,
     u+0131,
     u+0152-0153,
     u+02bb-02bc,
@@ -29,9 +28,7 @@
   font-family: "basic";
   font-style: normal;
   font-weight: 400;
-  src: local("basic Regular"),
-    local("basic-Regular"),
-    url("../fonts/xfu_0WLxV2_XKTNw6fe.woff2") format("woff2");
+  src: local("basic Regular"), local("basic-Regular"), url("../fonts/xfu_0WLxV2_XKTNw6fe.woff2") format("woff2");
   unicode-range:
     u+0000-00ff,
     u+0131,
@@ -61,7 +58,6 @@
   font-family: "ReklameScriptW00-Medium";
   src: url("../fonts/05b176f5-c622-4c35-af98-c0c056dd5b66.woff") format("woff");
 }
-
 
 @font-face {
   font-family: "Museo-W01-700";
@@ -93,6 +89,25 @@ body {
   font-family: "Arial", "Helvetica", sans-serif;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+main {
+  @media (min-width: $tablet-width) {
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease;
+  }
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -115,4 +130,24 @@ img {
 
 a {
   text-decoration: none;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(58px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }

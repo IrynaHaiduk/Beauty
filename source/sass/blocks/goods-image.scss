@@ -1,28 +1,26 @@
-.goods-image  {
-
+.goods-image {
   & img {
-  width: 100%;
-  object-fit: cover;
-  margin-bottom: 20px;
-}
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
 }
 
 .goods-image__title {
-
   @include title;
-   & span {
-     text-transform: uppercase;
-   }
+
+  & span {
+    text-transform: uppercase;
+  }
 }
 
-
 .goods-image__price {
-    font-size: 18px;
-    line-height: 1.3em;
-    font-family: "museo-slab-w01-100", serif;
-    text-align: center;
-    color: $light-brown2;
-    margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.3em;
+  font-family: "museo-slab-w01-100", serif;
+  text-align: center;
+  color: $light-brown2;
+  margin-bottom: 20px;
 
   & span:first-of-type {
     text-decoration: line-through;
@@ -38,7 +36,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .goods-image  {
+  .goods-image {
     width: 50%;
     margin-right: auto;
   }

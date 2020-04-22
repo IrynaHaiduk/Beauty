@@ -6,28 +6,27 @@
   @include nav-link;
 }
 
-
 @media (min-width: $tablet-width) {
-.pagination {
-  display: flex;
-  list-style: none;
-}
-
-.pagination__item:last-of-type {
-  position: relative;
-   margin-left: 30px;
-
-   ::before {
-     content: "";
-     position: absolute;
-     height: 15px;
-     border-left: 2px solid $light-brown2;
-     top: 6px;
-     left: -15px;
-   }
+  .pagination {
+    display: flex;
+    list-style: none;
   }
 
-.pagination__item--not-available .pagination__link {
-  color: $light-brown1;
-}
+  .pagination__item:last-of-type {
+    position: relative;
+    margin-left: 30px;
+
+    ::before {
+      content: "";
+      position: absolute;
+      height: 15px;
+      border-left: 2px solid $light-brown2;
+      top: 6px;
+      left: -15px;
+    }
+  }
+
+  .pagination__item--not-available .pagination__link {
+    color: $light-brown1;
+  }
 }

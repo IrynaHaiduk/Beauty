@@ -14,27 +14,28 @@
 }
 
 .user-list__link {
-  position: relative;
   @include nav-link;
-  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  text-decoration: none;
 }
 
 .user-list__icon {
-  position: absolute;
-  top: -5px;
-    left: 0;
   width: 26px;
   height: 26px;
   transition: 0.4s ease;
   fill: $light-brown2;
+  margin-right: 5px;
 }
 
-.user-list__link:hover  .user-list__icon,
-.user-list__link:focus  .user-list__icon {
+.user-list__link:hover .user-list__icon,
+.user-list__link:focus .user-list__icon {
   fill: $light-brown1;
 }
 
-.user-list__link:active  .user-list__icon{
+.user-list__link:active .user-list__icon {
   opacity: 0.7;
 }
 
@@ -65,8 +66,6 @@
   }
 }
 
-
-
 @media (min-width: $tablet-width) {
   .user-list {
     flex-direction: row;
@@ -81,16 +80,6 @@
     font-weight: bold;
     margin-bottom: 0;
     padding-right: 40px;
-  }
-
-  .user-list__link {
-    padding: 0;
-    padding-left: 40px;
-  }
-
-  .user-list__icon {
-    top: -5px;
-    left: 8px;
   }
 
   .user-list__select {
@@ -112,12 +101,12 @@
     }
   }
 
-  .user-list__link:hover  .user-list__icon,
-.user-list__link:focus  .user-list__icon {
-  fill: $dark-brown1;
-}
+  .user-list__link:hover .user-list__icon,
+  .user-list__link:focus .user-list__icon {
+    fill: $dark-brown1;
+  }
 
-.user-list__link:active  .user-list__icon{
-  opacity: 0.7;
-}
+  .user-list__link:active .user-list__icon {
+    opacity: 0.7;
+  }
 }

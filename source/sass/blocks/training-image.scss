@@ -1,42 +1,40 @@
-.training-image  {
-
+.training-image {
   & img {
-  width: 100%;
-  object-fit: cover;
-  margin-bottom: 20px;
-}
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
 }
 
 .training-image__title {
-
   @include title;
-   & span {
-     text-transform: uppercase;
-   }
+
+  & span {
+    text-transform: uppercase;
+  }
 }
 
-
 .training-image__price {
-    font-size: 18px;
-    line-height: 1.3em;
-    font-family: "museo-slab-w01-100", serif;
-    text-align: center;
-    color: $light-brown2;
-    margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.3em;
+  font-family: "museo-slab-w01-100", serif;
+  text-align: center;
+  color: $light-brown2;
+  margin-bottom: 20px;
 }
 
 .training-image__btn {
-   @include brown-btn;
+  @include brown-btn;
 }
 
 @media (min-width: $tablet-width) {
-  .training-image  {
+  .training-image {
     width: 50%;
     margin-right: auto;
   }
 
   .training-image__title {
-font-size: 24px;
+    font-size: 24px;
   }
 
   .training-image__price {

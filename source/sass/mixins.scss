@@ -102,6 +102,7 @@
   text-decoration: none;
   color: $light-brown2;
   font-family: "museo-slab-w01-100", serif;
+  outline: none;
 
   &[href]:hover,
   &[href]:focus {
@@ -126,4 +127,3 @@
     }
   }
 }
-
