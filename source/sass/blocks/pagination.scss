@@ -4,6 +4,37 @@
 
 .pagination__link {
   @include nav-link;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pagination__icon {
+  width: 16px;
+  height: 16px;
+  transition: 0.4s ease;
+  fill: $light-brown2;
+
+  &--back {
+    margin-right: 5px;
+  }
+
+  &--forward {
+    margin-left: 5px;
+  }
+
+}
+
+.pagination__link[href]:hover .pagination__icon,
+.pagination__link[href]:focus .pagination__icon {
+  fill: $dark-brown1;
+}
+
+.pagination__link[href]:active .pagination__icon {
+  opacity: 0.7;
+}
+.pagination__item--not-available .pagination__icon {
+  fill: $light-brown1;
 }
 
 @media (min-width: $tablet-width) {

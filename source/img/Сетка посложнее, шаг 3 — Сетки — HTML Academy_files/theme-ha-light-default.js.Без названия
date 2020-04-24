@@ -1,0 +1,155 @@
+ace.define("ace/theme/ha-light-default",["require","exports","module","ace/lib/dom"], function(require, exports, module) {
+
+exports.isDark = false;
+exports.cssClass = "ha-light-default";
+exports.cssText = ".ha-light-default {\
+font-family: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;\
+font-size: 16px\
+}\
+.ha-light-default .ace_gutter {\
+background: #f2f2f2;\
+color: #c0c0c0;\
+border-right: 1px solid #d5d5d5;\
+}\
+.ha-light-default .ace_fold {\
+background-color: #6B72E6;\
+}\
+.ha-light-default {\
+background-color: #FFFFFF;\
+color: black;\
+}\
+.ha-light-default .ace_cursor {\
+color: black;\
+}\
+.ha-light-default .ace_invisible {\
+color: rgb(191, 191, 191);\
+}\
+.ha-light-default .ace_storage,\
+.ha-light-default .ace_keyword {\
+color: blue;\
+}\
+.ha-light-default .ace_constant {\
+color: rgb(197, 6, 11);\
+}\
+.ha-light-default .ace_constant.ace_buildin {\
+color: rgb(88, 72, 246);\
+}\
+.ha-light-default .ace_constant.ace_language {\
+color: rgb(88, 92, 246);\
+}\
+.ha-light-default .ace_constant.ace_library {\
+color: rgb(6, 150, 14);\
+}\
+.ha-light-default .ace_invalid {\
+background-color: rgba(255, 0, 0, 0.1);\
+color: red;\
+}\
+.ha-light-default .ace_support.ace_function {\
+color: rgb(60, 76, 114);\
+}\
+.ha-light-default .ace_support.ace_constant {\
+color: rgb(6, 150, 14);\
+}\
+.ha-light-default .ace_support.ace_type,\
+.ha-light-default .ace_support.ace_class {\
+color: rgb(109, 121, 222);\
+}\
+.ha-light-default .ace_keyword.ace_operator {\
+color: rgb(104, 118, 135);\
+}\
+.ha-light-default .ace_string {\
+color: rgb(3, 106, 7);\
+}\
+.ha-light-default .ace_comment {\
+color: rgb(76, 136, 107);\
+}\
+.ha-light-default .ace_comment.ace_doc {\
+color: rgb(0, 102, 255);\
+}\
+.ha-light-default .ace_comment.ace_doc.ace_tag {\
+color: rgb(128, 159, 191);\
+}\
+.ha-light-default .ace_constant.ace_numeric {\
+color: rgb(0, 0, 205);\
+}\
+.ha-light-default .ace_variable {\
+color: rgb(49, 132, 149);\
+}\
+.ha-light-default .ace_xml-pe {\
+color: rgb(104, 104, 91);\
+}\
+.ha-light-default .ace_entity.ace_name.ace_function {\
+color: #0000A2;\
+}\
+.ha-light-default .ace_heading {\
+color: rgb(12, 7, 255);\
+}\
+.ha-light-default .ace_list {\
+color:rgb(185, 6, 144);\
+}\
+.ha-light-default .ace_meta.ace_tag {\
+color:rgb(0, 22, 142);\
+}\
+.ha-light-default .ace_string.ace_regex {\
+color: rgb(255, 0, 0)\
+}\
+.ha-light-default .ace_marker-layer .ace_selection {\
+background: rgb(181, 213, 255);\
+}\
+.ha-light-default.ace_multiselect .ace_selection.ace_start {\
+box-shadow: 0 0 3px 0px white;\
+}\
+.ha-light-default .ace_marker-layer .ace_step {\
+background: rgb(252, 255, 0);\
+}\
+.ha-light-default .ace_marker-layer .ace_stack {\
+background: rgb(164, 229, 101);\
+}\
+.ha-light-default .ace_marker-layer .ace_bracket {\
+margin: -1px 0 0 -1px;\
+border: 1px solid rgb(192, 192, 192);\
+}\
+.ha-light-default .ace_marker-layer .ace_selected-word {\
+background: rgb(250, 250, 255);\
+border: 1px solid rgb(200, 200, 250);\
+}\
+.ha-light-default .ace_indent-guide {\
+background: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==\") right repeat-y;\
+}\
+.ha-light-default .ace_gutter-cell.ace_error {\
+background-image: url(\"data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 8C15 11.866 11.866 15 8 15C4.13403 15 1 11.866 1 8C1 4.13403 4.13403 1 8 1C11.866 1 15 4.13403 15 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58173 16 0 12.4183 0 8C0 3.58173 3.58173 0 8 0C12.4183 0 16 3.58173 16 8ZM6.7287 3.88849C6.6958 3.59229 6.92761 3.33325 7.22565 3.33325H8.77502C9.07306 3.33325 9.30487 3.59229 9.27197 3.88849L8.71643 8.88849C8.68829 9.14166 8.47424 9.33325 8.21948 9.33325H7.78119C7.52643 9.33325 7.31238 9.14166 7.28424 8.88849L6.7287 3.88849ZM9.33368 12.0001C9.33368 12.7365 8.73669 13.3334 8.00031 13.3334C7.26392 13.3334 6.66699 12.7365 6.66699 12.0001C6.66699 11.2637 7.26392 10.6667 8.00031 10.6667C8.73669 10.6667 9.33368 11.2637 9.33368 12.0001Z' fill='%23F05A28'/%3E%3C/svg%3E%0A\");\
+background-position: 4px center;\
+}\
+.ha-light-default .ace_tooltip {\
+display: none !important;\
+border: 1px solid #e84e1b;\
+background-image: none;\
+box-shadow: none;\
+color: #333333;\
+background-color: #ffffff;\
+font-size: 14px;\
+font-family: 'Muller','Arial',sans-serif;\
+}\
+.ha-light-default .ace_tooltip::before {\
+content: '';\
+position: absolute;\
+top: calc(50% - 4px);\
+left: -4px;\
+width: 8px;\
+height: 8px;\
+border: 1px solid #e84e1b;\
+border-top-color: transparent;\
+border-right-color: transparent;\
+transform: rotate(45deg);\
+background-color: #ffffff;\
+}\
+.ha-light-default .ace_fold-widget,\
+.ha-light-default .ace_fold-widget:hover {\
+box-shadow: none;\
+border: none;\
+border-radius: 0;\
+}";
+
+var dom = require("../lib/dom");
+dom.importCssString(exports.cssText, exports.cssClass);
+});

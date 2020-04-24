@@ -20,11 +20,28 @@
   &--active {
     display: flex;
     align-items: center;
-  }
+}
+}
 
-  & svg {
+.breadcrumbs__icon {
+  width: 16px;
+  height: 16px;
+  transition: 0.4s ease;
+  fill: $light-brown2;
     margin-right: 5px;
-  }
+}
+
+.breadcrumbs__link[href]:hover .breadcrumbs__icon,
+.breadcrumbs__link[href]:focus .breadcrumbs__icon {
+  fill: $light-brown1;
+}
+
+.breadcrumbs__link[href]:active .breadcrumbs__icon {
+  opacity: 0.7;
+}
+
+.breadcrumbs__item--not-available .breadcrumbs__icon {
+  fill: $light-brown1;
 }
 
 @media (min-width: $tablet-width) {
