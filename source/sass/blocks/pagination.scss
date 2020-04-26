@@ -22,7 +22,6 @@
   &--forward {
     margin-left: 5px;
   }
-
 }
 
 .pagination__link[href]:hover .pagination__icon,
@@ -33,6 +32,7 @@
 .pagination__link[href]:active .pagination__icon {
   opacity: 0.7;
 }
+
 .pagination__item--not-available .pagination__icon {
   fill: $light-brown1;
 }
