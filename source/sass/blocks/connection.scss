@@ -41,9 +41,11 @@
   font-size: 21px;
 }
 
-.connection__info {
+.connection__link {
   line-height: 1em;
   font-size: 14px;
+
+  @include contacts-link;
 }
 
 .connection__icon {
@@ -83,18 +85,13 @@
     }
   }
 
-  .connection__link img {
-    width: 20px;
-    height: 20px;
-  }
-
   .connection__title {
     font-size: 24px;
     vertical-align: baseline;
     letter-spacing: 0.1em;
   }
 
-  .connection__info {
+  .connection__link {
     font-size: 16px;
     letter-spacing: 0.1em;
   }
