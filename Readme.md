@@ -1,4 +1,4 @@
-﻿#Project «Beauty.bo» 
+﻿# Project «Beauty.bo» 
 
 Personal selection of high-quality decorative cosmetics and make-up courses
 
